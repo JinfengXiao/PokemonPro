@@ -79,7 +79,6 @@ You are welcome to play with these queries and whatever you come up with.
 ### SQL Queries:
 
 ```mysql
-damage_factor > 100 -- Basic CRUD
 SELECT * FROM types;
 INSERT INTO types (identifier, damage_class) VALUES ('mysterious', 'special');
 SELECT * FROM types;
