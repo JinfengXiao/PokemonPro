@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pokemon Pro</title>
+    <link rel="stylesheet" href="../static/styles.css">
+    <style>
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+        }
+
+        .background {
+            width: 100%;
+            height: 100%;
+            min-width: 100%;
+            min-height: 100%;
+            position: relative;
+        }
+
+        .background::before {
+                background-image: url("../static/images/pokemon_background.jpg");
+                background-size: cover;
+                content: "";
+                display: block;
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                z-index: -2;
+                opacity: 0.4;
+        }
+
+    </style>
+</head>
+
+
+<div class="background">
+
+    <div class="header">
+        <h1>Pokemon Pro</h1>
+    </div>
+
+    <nav>
+        <ul>
+            <li><a href="battle.html">Pokemon Battler</a></li>
+            <p>Lightweight game to pit Pokemon against each other.</p>
+            <li><a href="create.html">Create a Pokemon</a></li>
+            <p>Use your imagination to create a new Pokemon.</p>
+            <li><a href="find.html">Find My Pokemon</a></li>
+            <p>Search for the Pokemon you want.</p>
+        </ul>
+    </nav>
+
+        <h3>
+            What is Pokemon Pro?
+        </h3>
+        <p>Pokemon Pro is a website that has the tools that will enable you to become a Pokemaster.
+            Whether you are playing on a Nintendo Switch, playing cards, or PokemonGo, the concept is the same.
+            You can search for your favorite pokemon in three ways: using the search page linked at the left, entering a SQL query in the first text box below, or entering a keyword or natural language query in the second text box below.
+            You tell us what features you would like in a Pokemon and we will tell you your perfect match. You can even create your own imaginatory pokemon, or play a small pokemon battle game!</p>
+
+    <div class="article">
+        <h> Submit your SQL query here: </h>
+        <form method="POST">
+            <input name="sql_query" size="75" placeholder="SELECT * FROM types;">
+            <input type="submit">
+        </form>
+    </div>
+
+    <div class="article">
+        <h> Submit your keyword query or natural language query here: </h>
+        <form method="POST">
+            <input name="nlp_query" size="75" placeholder="I want pokemon with wings and is of the fire type">
+            <input type="submit">
+        </form>
+    </div>
+
+</div>
+</html>

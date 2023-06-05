@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Find My Perfect Pokemon</title>
+    <link rel="stylesheet" href="../static/styles.css">
+    <style>
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+        }
+
+        .background {
+            width: 100%;
+            height: 100%;
+            min-width: 100%;
+            min-height: 100%;
+            position: relative;
+        }
+
+        .background::before {
+                background-image: url("../static/images/find.jpg");
+                background-size: cover;
+                content: "";
+                display: block;
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                z-index: -2;
+                opacity: 0.4;
+        }
+
+    </style>
+</head>
+
+<div class="background">
+    <form action="/" method='GET'>
+        <input type="submit" value="home">
+    </form>
+    <h1>Pokemon Search by Names</h1>
+
+    <form action='/simple_search' method = 'POST'>
+        <label for="name">Name</label><br>
+        <input type="text" id="name" name="name"><br>
+        <input type="submit" value="Search!">
+    </form>
+    <form action='/simple_search' method = 'GET'>
+        <input type="submit" value="Reset">
+    </form>
+    <br>
+
+
+    <h1>Pokemon Search by Types</h1>
+
+    <h3>Type I</h3>
+        <select name="type1" form="submit_form">
+            <option value="normal">normal</option>
+            <option value="fighting">fighting</option>
+            <option value="flying">flying</option>
+            <option value="poison">poison</option>
+            <option value="ground">ground</option>
+            <option value="rock">rock</option>
+            <option value="bug">bug</option>
+            <option value="ghost">ghost</option>
+            <option value="steel">steel</option>
+            <option value="fire">fire</option>
+            <option value="water">water</option>
+            <option value="grass">grass</option>
+            <option value="electric">electric</option>
+            <option value="psychic">psychic</option>
+            <option value="ice">ice</option>
+            <option value="dragon">dragon</option>
+            <option value="dark">dark</option>
+            <option value="fairy">fairy</option>
+            </select><br>
+        <h3>Type II</h3>
+        <select name="type2" form="submit_form">
+            <option value="normal">normal</option>
+            <option value="fighting">fighting</option>
+            <option value="flying">flying</option>
+            <option value="poison">poison</option>
+            <option value="ground">ground</option>
+            <option value="rock">rock</option>
+            <option value="bug">bug</option>
+            <option value="ghost">ghost</option>
+            <option value="steel">steel</option>
+            <option value="fire">fire</option>
+            <option value="water">water</option>
+            <option value="grass">grass</option>
+            <option value="electric">electric</option>
+            <option value="psychic">psychic</option>
+            <option value="ice">ice</option>
+            <option value="dragon">dragon</option>
+            <option value="dark">dark</option>
+            <option value="fairy">fairy</option>
+        </select><br>
+    <form action="/search_by_type" method='POST', id="submit_form">
+        <input type="submit" value="Search!">
+    </form>
+    <form action='/search_by_type' method='GET'>
+        <input type="submit" value="Reset">
+    </form>
+
+    <div class="right">
+        <h1>Search for Type Properties</h1>
+        <p>Enter your pokemon's type</p>
+        <select name="type" form="get_type">
+            <option value="normal">normal</option>
+            <option value="fighting">fighting</option>
+            <option value="flying">flying</option>
+            <option value="poison">poison</option>
+            <option value="ground">ground</option>
+            <option value="rock">rock</option>
+            <option value="bug">bug</option>
+            <option value="ghost">ghost</option>
+            <option value="steel">steel</option>
+            <option value="fire">fire</option>
+            <option value="water">water</option>
+            <option value="grass">grass</option>
+            <option value="electric">electric</option>
+            <option value="psychic">psychic</option>
+            <option value="ice">ice</option>
+            <option value="dragon">dragon</option>
+            <option value="dark">dark</option>
+            <option value="fairy">fairy</option>
+        </select>
+        <form action="/type_efficacy" method='POST' id='get_type'>
+            <input type="submit" value="Count">
+        </form>
+        <form action='/type_efficacy' method='GET'>
+            <input type="submit" value="Reset">
+        </form>
+    </div>
+    
+</div>
+
+</html>
