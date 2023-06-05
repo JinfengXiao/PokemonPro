@@ -1,7 +1,7 @@
 # Pokemon Pro
 This repo contains the source code for a web server about Pokemon. The homepage looks like this:
 
-![interface](./data/images/interface.png)
+![interface](./static/images/interface.png)
 
 On this webpage, you can search for a Pokemon, create new Pokemon, or play a Pokemon battle. The web server can be hosted on a local machine. We also provide the code for hosting a cloud server on [Heroku](https://www.heroku.com/).
 
