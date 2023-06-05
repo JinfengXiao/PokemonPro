@@ -67,7 +67,7 @@ to start the local web server and follow the printed link to open the webpage in
 We deployed a Heroko-based cloud server in 2020 and later retired it. To host a cloud server, follow these steps:
 
 - Set up a MySQL DB and MongoDB online.
-- Change the `app_cloud.config` values to access the web databases.
+- Change the `app_cloud.config` values in `app_cloud.py` to access the web databases.
 - Run `app_cloud.py` on a cloud server and access the webpage following the instructions from the cloud service provider.
 
 Warning: Users can change the data in the backend DB.
