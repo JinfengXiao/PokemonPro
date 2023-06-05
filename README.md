@@ -5,7 +5,7 @@ This repo contains the source code for a web server about Pokemon. The homepage 
 
 On this webpage, you can search for a Pokemon, create new Pokemon, or play a Pokemon battle. The web server can be hosted on a local machine. We also provide the code for hosting a cloud server on [Heroku](https://www.heroku.com/).
 
-This was part of my course project for `CS411: Database Systems` in Spring 2020 at the University of Illinois at Urbana-Champaign. My teammates include [Joshua Perks](https://github.com/joshuaPerakis), [David Fernandez-Wang](https://github.com/davidfwww), and [Zixuan Shao](https://github.com/PygMali0n). My major contribution to the project is the **full-stack development** of this web application including MySQL & MongoDB database construction, flask & HTML development, cloud deployment, and code documentation. My teammates played major roles in data file collection, webpage layout design, the Pokemon Battler module deployment, and report writing.
+This was part of my course project for `CS411: Database Systems` in Spring 2020 at the University of Illinois at Urbana-Champaign. My teammates include [Joshua Perks](https://github.com/joshuaPerakis), [David Fernandez-Wang](https://github.com/davidfwww), and [Zixuan Shao](https://github.com/PygMali0n). The code was originally developed in Joshua's private repo, and this is a public release with sensitive data removed. My major contribution to the project is the **full-stack development** of this web application including MySQL & MongoDB database construction, flask & HTML development, cloud deployment, and code documentation. My teammates played major roles in data file collection, webpage layout design, the Pokemon Battler module deployment, and report writing.
 
 ## Setting Up Local Server
 
